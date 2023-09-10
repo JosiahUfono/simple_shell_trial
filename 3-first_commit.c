@@ -11,25 +11,9 @@
 	/*To get data from the cli, we'll be using a stdin function getline()
 	getline takes thre params, a pointer to the string (passed as an address (&...)), the length or size of the string
 	of type size_t ( also passed as an address (&...)) and the stdin text
-
-	sample:
-	#include <stdio.h>
-	#include <stdlib.h>
-	int main(void)
-	{
-	char *line =NULL;
-	size_t len = 0;
-	ssize_t lineSize = 0;
-
-	printf("Please enter a line:\n");
-	lineSize = getline(&line, &len, stdin);
-
-	printf("You entered %s, which has %zu chars.\n", line, lineSize -1);
-
-	free(line);
-	return 0;
-	}
 	*/
+
+
 int _putchar(char c)
 {
 	return (write(1, &c, 1));
