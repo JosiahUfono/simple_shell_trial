@@ -7,4 +7,7 @@
 #include <sys/wait.h>
 #include <string.h>
 
-#endif /*MAIN_H*/
+char *path_getter(char *arg);
+char *location(char *path, char *arg);
+
+#endif
